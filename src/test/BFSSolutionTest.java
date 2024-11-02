@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class BFSSolutionTest {
 
-    private BFSSolution bfsSolution;
+    private final BFSSolution bfsSolution=new BFSSolution();
 
     @Test
     public void testCombine() {

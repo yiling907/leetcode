@@ -132,7 +132,7 @@ public class BFSSolution {
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 if (deep%2==1) {
-                    path.addFirst(node.val);
+                    path.add(0,node.val);
                 }else path.add(node.val);
                 if (node.left != null) queue.add(node.left);
                 if (node.right != null) queue.add(node.right);
@@ -195,7 +195,7 @@ public class BFSSolution {
                 if (node.left != null) queue.add(node.left);
                 if (node.right != null) queue.add(node.right);
             }
-            res.addFirst(path);
+            res.add(0,path);
         }
         return res;
     }
