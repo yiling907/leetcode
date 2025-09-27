@@ -1,6 +1,5 @@
-package test;
+package bfs;
 
-import bfs.BFSSolution;
 import org.junit.Assert;
 import org.junit.Test;
 
